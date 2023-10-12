@@ -1,0 +1,110 @@
+<!-- 
+
+    Box Model Project
+
+    This project is to demonstrate the Box Model concept in HTML, CSS and JavaScript.
+
+    You will start to learn how to apply CSS rules to a DOM element. And you will also
+    learn how to manipulate a DOM's CSS rules with JavaScript.
+
+    Along the way, with the simple layout, this demonstrates the CSS Flex features.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Box Model</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- left side area, column flex -->
+        <div id="left-area">
+            <div id="header">
+                <strong>The Box Model</strong> | Github : https://github.com/kidino/box-model | https://box-model.pages.dev
+            </div>
+            <!-- the box area -->
+            <div id="box-area">
+                <div id="the-box">
+
+                </div>
+            </div>
+
+            <!-- displays the CSS code -->
+            <div id="code-area">
+
+            </div>
+        </div>
+
+        <!-- the modifier ui right sidebar -->
+        <div id="ui-area">
+
+            <!-- ui for updating the width -->
+            <div class="ui-widget">
+                <label for="">Width</label>
+                <input type="range" value="50" id="box-width" min="50" max="400" step="1">
+                <input type="text" name="" id="box-width-value" readonly value="50">
+            </div>
+
+            <!-- ui for updating the height -->
+            <div class="ui-widget">
+                <label for="">Height</label>
+                <input type="range" value="50" id="box-height" min="50" max="400" step="1">
+                <input type="text" name="" id="box-height-value" readonly value="50">
+            </div>
+
+            <!-- ui for updating border radius -->
+            <div class="ui-widget">
+                <label for="">Border Radius</label>
+                <input type="range" value="0" id="box-corners" min="0" max="100" step="1">
+                <input type="text" name="" id="box-corners-value" readonly value="0">
+            </div>
+
+            <!-- ui for updating border size -->
+            <div class="ui-widget">
+                <label for="">Border Size</label>
+                <input type="range" value="1" id="box-borders-size" min="1" max="20" step="1">
+                <input type="text" name="" id="box-borders-size-value" readonly value="1">
+            </div>
+
+            <!-- ui for updating border style -->
+            <div class="ui-widget">
+                <label for="">Border Style</label>
+                <select name="" id="box-border-style">
+                    <option value="solid">solid</option>
+                    <option value="dashed">dashed</option>
+                    <option value="dotted">dotted</option>
+                    <option value="double">double</option>
+                    <option value="groove">groove</option>
+                    <option value="ridge">ridge</option>
+                    <option value="inset">inset</option>
+                    <option value="outset">outset</option>
+                    <option value="none">none</option>
+                </select>
+            </div>
+
+            <!-- ui for updating border color -->
+            <div class="ui-widget">
+                <label for="">Border Color</label>
+                <input type="color" id="box-borders-color" value="#000000">
+                <input type="text" name="" id="box-borders-color-value" class="color-value" value="#000000">
+            </div>
+
+            <!-- ui for updating background color -->
+            <div class="ui-widget">
+                <label for="">Background Color</label>
+                <input type="color" id="box-background-color" value="#ffffff">
+                <input type="text" name="" id="box-background-color-value" class="color-value" value="#ffffff">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

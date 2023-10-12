@@ -1,0 +1,102 @@
+body {
+    background-color: #f0f0f0;
+    margin: 0px;
+    padding: 0px;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+div.container {
+    display: flex;
+    margin: 0px;
+    justify-content: space-between;
+    padding: 15px;
+    height: calc(100vh - 10px);
+}
+
+div#left-area {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-right: 15px;
+}
+
+div#box-area {
+    border: 1px solid #999;
+    background-color: #fff;
+    overflow: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+div#code-area {
+    height: 200px;
+    border: 1px solid #999;
+    background-color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+div#header {
+    background-color: #999; 
+    color: #fff; 
+    margin-bottom: 15px;
+}
+
+div#ui-area {
+    width: 285px;
+    background-color: #999;
+    padding: 15px;
+}
+
+div#box-area,
+div#ui-area,
+div#code-area,
+div#header {
+    border-radius: 5px;
+    padding: 15px;
+}
+
+
+div#the-box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+label {
+    display: flex;
+    flex-basis: 100%;
+    font-weight: bold;
+    font-size: 0.9em
+}
+
+.ui-widget {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+input[type=range] {
+    margin-right: 10px;
+    flex: 1
+}
+
+input[type=text] {
+    width: 50px;
+}
+
+input[type=color]+input {
+    width: 80px;
+    margin-left: 10px;
+}
+
+select {
+    width: 100px;
+    height: 28px;
+}
